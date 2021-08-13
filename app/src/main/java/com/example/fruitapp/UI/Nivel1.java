@@ -36,7 +36,7 @@ public class Nivel1 extends AppCompatActivity {
     private VidasViewModel vidasViewModel;
 
     int numAleatorio_uno, numAleatorio_dos, resultado, i;
-    int vida;
+    public static int vidas = 3;
 
     String nombre_jugador, string_score, string_vidas;
 
@@ -119,7 +119,6 @@ public class Nivel1 extends AppCompatActivity {
                     // btn_music.setBackgroundResource(R.drawable.music);
                      Toast.makeText(getApplicationContext(), R.string.toast_btn_music_on, Toast.LENGTH_SHORT).show();
                 }
-
             }
 
         });
@@ -197,9 +196,6 @@ public class Nivel1 extends AppCompatActivity {
             } else if (resultado != respuesta_jugador & i == 1) { //Single click , no sound
 
                 //Las vidas se tiene que decrementar
-               // vidasViewModel.setResultado(DisminuirVidas.disminuir(vidasViewModel.getResultado()));
-               // vidas--;
-                // scoreViewModel.setResultado(AumentarScore.aumentar(scoreViewModel.getResultado()));
                 vidasViewModel.setResultado( DisminuirVidas.disminuir(vidasViewModel.getResultado()));
 
                 et_respuesta.setText(""); //Limpiando el  editText_resultado
@@ -238,7 +234,6 @@ public class Nivel1 extends AppCompatActivity {
                 mp_bad.start();
 
                 //Las vidas se tiene que decrementar
-                //vidasViewModel.setResultado(DisminuirVidas.disminuir(vidasViewModel.getResultado()));
                 vidasViewModel.setResultado( DisminuirVidas.disminuir(vidasViewModel.getResultado()));
 
                 et_respuesta.setText(""); //Limpiando el  editText_resultado
