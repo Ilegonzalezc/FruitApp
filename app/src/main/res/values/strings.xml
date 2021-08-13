@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">FruitApp</string>
+
+    <string name="txt_nombre">¿Cómo te llamas?</string>
+    <string name="btn">Jugar</string>
+
+    <string name="toast_faltaNombre">Primero debes escribir tu nombre</string>
+
+    <string name="toast_nivel1">Nivel 1 - Sumas básicas</string>
+    <string name="toast_nivel2">Nivel 2 - Sumas moderadas</string>
+    <string name="toast_nivel3">Nivel 3 - Restas </string>
+    <string name="toast_nivel4">Nivel 4 - Sumas y Restas</string>
+    <string name="toast_nivel5">Nivel 5 - Multiplicaciones</string>
+    <string name="toast_nivel6">Nivel 6 - Sumas, Restas y Multiplicaciones</string>
+
+    <string name="toast_null_respuesta">Escribe tu respuesta</string>
+    <string name="toast_dos_manzanas">Te quedan dos manzanas</string>
+    <string name="toast_una_manzana">Te queda una manzana</string>
+    <string name="toast_lost">Has perdido todas tus manzanas</string>
+    <string name="toast_win">Felicidades, eres un genio!</string>
+
+    <string name="tv_nombre">Jugador: </string>
+
+    <string name="et_vidas">Manzanas: </string>
+    <string name="jugador_nombre">Jugador: </string>
+    <string name="total_score">Score: 0 </string>
+    <string name="boton_sumar">Comprobar</string>
+    <string name="et_respuesta">Respuesta</string>
+    <string name="textView_bestScore" translatable="false"></string>
+
+    <string name="toast_btn_music_on">musica</string>
+    <string name="toast_btn_music_off"> no musica</string>
+    <string name="toast_btn_sound_on">sonido</string>
+    <string name="toast_btn_sound_off"> no sonido</string>
+    <string name="btn_Power">Cerrar sección</string>
+
+</resources>

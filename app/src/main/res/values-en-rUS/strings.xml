@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FruitApp</string>
+    <string name="txt_nombre">What is your name?</string>
+    <string name="btn">Play</string>
+
+    <string name="et_vidas">Apples</string>
+    <string name="jugador_nombre">Player</string>
+    <string name="total_score">Score: 0</string>
+    <string name="boton_sumar">Check</string>
+    <string name="et_respuesta">Answer</string>
+
+    <string name="tv_nombre">"Player: "</string>
+    <string name="toast_faltaNombre">First, you must type your name</string>
+    <string name="toast_null_respuesta">Type your answer</string>
+
+    <string name="toast_dos_manzanas">Two apples left</string>
+    <string name="toast_una_manzana">One apple left</string>
+    <string name="toast_lost">You lost!</string>
+    <string name="toast_win">Congrats! You Win!</string>
+
+    <string name="toast_nivel1">Level 1 - Basic Addition</string>
+    <string name="toast_nivel2">Level 2 - Advanced Addition</string>
+    <string name="toast_nivel3">Level 3 - Subtraction</string>
+    <string name="toast_nivel4">Level 4 -  Addition and Subtraction</string>
+    <string name="toast_nivel5">Level 5 -   Multiplication</string>
+    <string name="toast_nivel6">Level 6 - Addition, Subtraction and Multiplication</string>
+    <string name="toast_btn_music_on">music on</string>
+    <string name="toast_btn_music_off">music off</string>
+    <string name="toast_btn_sound_on">sound on</string>
+    <string name="toast_btn_sound_off">sound off</string>
+    <string name="btn_Power">Shut down</string>
+
+
+</resources>
