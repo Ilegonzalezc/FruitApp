@@ -200,14 +200,14 @@ public class Nivel1 extends AppCompatActivity {
                // vidasViewModel.setResultado(DisminuirVidas.disminuir(vidasViewModel.getResultado()));
                // vidas--;
                 // scoreViewModel.setResultado(AumentarScore.aumentar(scoreViewModel.getResultado()));
-                vidasViewModel.setResultado( DisminuirVidas(vidasViewModel.getResultado()));
+                vidasViewModel.setResultado( DisminuirVidas.disminuir(vidasViewModel.getResultado()));
 
                 et_respuesta.setText(""); //Limpiando el  editText_resultado
 
                 BaseDeDatos();
 
                 //Programar que va a pasar dependiendo de la cantidad de vidas que tenga el jugador
-                switch (vida){
+                switch (vidasViewModel.getResultado()){
                     case 3:
                         iv_vidas.setImageResource(R.drawable.tresvidas);
                         break;
@@ -239,14 +239,14 @@ public class Nivel1 extends AppCompatActivity {
 
                 //Las vidas se tiene que decrementar
                 //vidasViewModel.setResultado(DisminuirVidas.disminuir(vidasViewModel.getResultado()));
-                vida = disminuirVidas.getVidas();
+                vidasViewModel.setResultado( DisminuirVidas.disminuir(vidasViewModel.getResultado()));
 
                 et_respuesta.setText(""); //Limpiando el  editText_resultado
 
                 BaseDeDatos();
 
                //Programar que va a pasar dependiendo de la cantidad de vidas que tenga el jugador
-                switch (vida){
+                switch (vidasViewModel.getResultado()){
                     case 3:
                         iv_vidas.setImageResource(R.drawable.tresvidas);
                         break;
@@ -321,7 +321,7 @@ public class Nivel1 extends AppCompatActivity {
             //string_score es una variable de tipo string y score es de tipo entero, por lo que se usa String.valueOf
             string_score = String.valueOf(scoreViewModel.getResultado());
             //Lo mismo pasa con la variable vidas
-            string_vidas = String.valueOf(DisminuirVidas.getVidas());
+            string_vidas = String.valueOf(vidasViewModel.getResultado());
 
             intent.putExtra("Jugador", nombre_jugador);
             intent.putExtra("score", string_score);
